@@ -1,0 +1,89 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    background-color: darksalmon;
+
+}
+
+/* score and timer */
+#h1_score, #score {
+
+    float: left;
+
+}
+
+.container {
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+
+}
+
+#h1_time, #timeLeft {
+
+    float: left;
+
+}
+
+/* end score and timer */
+
+/* ground */
+.container2 {
+
+    display: flex;
+    width: 70%;
+    height: 100%;
+    flex-wrap: wrap;
+    margin-left: 20rem;
+    margin-top: 3rem;
+
+}
+
+#ground0, #ground1, #ground2, #ground3, #ground4, #ground5 {
+
+    margin: 5rem;
+    margin-top: 13rem;
+    width: 15rem;
+    height: 5rem;
+    background: url("../images/dirt.svg") center no-repeat;
+    background-size: 12rem;
+    position: relative;
+
+}
+
+
+/* ground */
+
+/* start button */
+
+#start {
+
+    text-align: center;
+
+}
+
+#buttonStart {
+
+    font-size: 2rem;
+
+}
+
+/* end start button */
+
+/* div mole */
+
+.mole {
+
+    background: url("../images/mole.svg") center no-repeat;
+    margin-left: 5rem;
+    background-size: 6rem;
+    height: 8.5rem;
+    width: 5.7rem;
+    position: absolute;
+    bottom: 3rem;
+
+}
