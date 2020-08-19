@@ -49,13 +49,6 @@ buttonStart.addEventListener("click", e => {
         // adding a class to the div(mole)
         divMole.classList.add("mole");
 
-        // adding a function so that the score goes up when the div(mole) is clicked
-        divMole.onclick = function scoreUp() {
-
-            score.textContent = String(Number(score.textContent) + 1);
-
-        };
-
         // random ground in order to append the div (mole)
         const randomGround = document.getElementById(`ground${randomIndex}`);
 
@@ -63,7 +56,18 @@ buttonStart.addEventListener("click", e => {
         randomGround.appendChild(divMole);
 
         // getting random time (the time that the mole takes in order to disappear)
-        const randomTime = Math.floor(Math.random() * 1000);
+        const randomTime = Math.floor(Math.random() * 900);
+
+        // adding a function so that the score goes up and the mole gets removed when the div(mole) is clicked
+        divMole.onclick = function scoreUp() {
+
+            // adds a point to the score
+            score.textContent = String(Number(score.textContent) + 1);
+
+            // removes the mole once is clicked
+            divMole.parentNode.removeChild(divMole);
+
+        };
 
         // removing the mole
         setTimeout(() => {
@@ -97,6 +101,7 @@ document.addEventListener("keypress", e => {
     // if statement that adds 10 points when the user writes the word "score" on the keyboard
     if (keyPressed.join('').includes(cheatingCode)) {
 
+        // adds 10 points to the score
         score.textContent = String(Number(score.textContent) + 10);
 
     };
