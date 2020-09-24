@@ -45,9 +45,9 @@
 
 #ground0, #ground1, #ground2, #ground3, #ground4, #ground5 {
 
-    margin: 5rem;
-    margin-top: 13rem;
-    width: 15rem;
+    margin: 3rem;
+    margin-top: 7rem;
+    width: 12rem;
     height: 5rem;
     background: url("../images/dirt.svg") center no-repeat;
     background-size: 12rem;
@@ -79,7 +79,7 @@
 .mole {
 
     background: url("../images/mole.svg") center no-repeat;
-    margin-left: 5rem;
+    margin-left: 3rem;
     background-size: 6rem;
     height: 8.5rem;
     width: 5.7rem;
